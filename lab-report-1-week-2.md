@@ -37,10 +37,30 @@ To move files, use the command
 For example: 
 >`scp WhereAmI.java cs15lwi22agw@ieng6.ucsd.edu:~/`  
 
-This will move a file called WhereAmI.java from the client computer to the home directory of the server computer.  
+* This will move a file called WhereAmI.java from the client computer to the home directory of the server computer.  
 
+It should look like this ( if ls in the server, then you can see the file): 
+![Image](./Images/ssh2.PNG)
 
 ## **5)Setting an SSH Key**
 ---
+This saves time so you don't have to keep entering your password. Use this command:
+> ssh-keygen
+
+![Image](./Images/sshkey.PNG)
+>scp /Users/xxsta/.ssh/id_rsa.pub cs15lwi22agw@ieng6.ucsd.edu:~/.ssh/authorized_keys  
+* This moves the public key that was just generated into the .ssh file onto the server computer from the client computer.  
+
+![Image](./Images/sshkey2.PNG)
+* It is now possible to ssh without a password
 ## **6)Optimizing Remote Running**
 ---
+You can run multiple commands in the server computer by doing:
+>ssh cs15lwi22agw@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
+* Note: " " allow us to specify for these commands to be run on the server
+* Note: ; allows us to seperate commands.  
+
+An example of this:
+![Image](./Images/p7.PNG)
+> scp WhereAmI.java cs15lwi22agw@ieng6.ucsd.edu:~/; ssh cs15lwi22agw@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
+* Translation: run scp of WhereAmI.java to home directory in server. Then ssh into ieng6 and thne compile and run WhereAmI.java.
