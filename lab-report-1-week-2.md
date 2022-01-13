@@ -12,9 +12,9 @@ Try to find your username on [link](https://sdacs.ucsd.edu/~icc/index.php). Mine
 * If you are on windows, download [OpenSSh](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse).  
 * If it asks if you want to continue connecting, then type yes.  
 * To ssh use this command: 
-> `ssh <your username>@ieng6.ucsd.edu`. 
+> `ssh <your username>@ieng6.ucsd.edu`
 * For example: I would type 
-> `ssh cs15lwi22agw@ieng6.ucsd.edu`.
+> `ssh cs15lwi22agw@ieng6.ucsd.edu`
 * Click enter. It will prompt you for your password, which you should type in, and click enter when you are done.  
   
 This is what it should look like:
@@ -32,7 +32,7 @@ This is what it should look like:
 ## **4)Moving Files with scp**
 ---
 To move files, use the command 
->`scp <filename> <destination> `  
+>`scp <filename> <destination>`  
 
 For example: 
 >`scp WhereAmI.java cs15lwi22agw@ieng6.ucsd.edu:~/`  
