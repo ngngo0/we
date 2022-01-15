@@ -1,4 +1,4 @@
-# **How to log into ieng6(Windows)**
+# **How to log into ieng6**
 ## **1)Installing Visual Studio Code**
 ---
 In order to install this, first go to the page [download link for vsc](https://code.visualstudio.com/download).
