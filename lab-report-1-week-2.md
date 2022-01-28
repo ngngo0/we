@@ -27,7 +27,8 @@ This is what it should look like:
 ---
 
 ![Image](./Images/trycmds.PNG)
-* Here I tried the commands ls, ls -a, cd WhereAmI.java, and cat.
+* Here I tried the commands 
+  >```ls```, ```ls -a```, ```cd WhereAmI.java```, and ```cat.```
 * I tried to change directories to a file(you can only change directories to a folder), which didn't work. 
 ## **4)Moving Files with scp**
 ---
@@ -65,14 +66,17 @@ It is now possible to ssh without a password
 ## **6)Optimizing Remote Running**
 ---
 You can run multiple commands in the server computer by doing:
->ssh cs15lwi22agw@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
-* Note: " " allow us to specify for these commands to be run on the server
-* Note: ; allows us to seperate commands.  
+>`ssh cs15lwi22agw@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`
+* Note: `" "` allow us to specify for these commands to be run on the server
+* Note: `;` allows us to seperate commands.  
 * Note: no password prompt because of the ssh key
 
 An example of this:
 ![Image](./Images/p7.PNG)
 > `scp WhereAmI.java cs15lwi22agw@ieng6.ucsd.edu:~/; ssh cs15lwi22agw@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`
 * Translation: run scp of WhereAmI.java to home directory in server. Then ssh into ieng6 and thne compile and run WhereAmI.java.
+
+Key Stroke count: 1. 
+* I only used the up arrow.
 
 The combination of SSH keys and being able to run multiple commands in one line allows us to quickly update changes in files from the client computer to the server computer. 
