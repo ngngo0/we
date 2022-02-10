@@ -3,6 +3,8 @@
 ![Image](./Images2/fixIm.PNG)
 Test file that produced failure: [new-file.md](https://github.com/ngngo0/markdown-parse/blob/b73b94f14c0c8a5054b977a2519f121850200718/new-file.md)
 
+Command: ```java MarkdownParse new-file.md```
+
 Output: ```[pic, https://help.com]```
 
 **Explanation:**
@@ -15,6 +17,8 @@ Note: This creates another bug #2.
 ![Image](./Images2/fix.PNG)
 Test file that produced failure: [firstline.md](https://github.com/ngngo0/markdown-parse/blob/28f3d24f1c8b98f11927d200516e30f99949a7d4/firstline.md)
 
+Command: ```java MarkdownParse firstline.md```
+
 Output: ```Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1```
 
 **Explanation:**
@@ -24,6 +28,8 @@ The bug is that whenever the link is on the first line, and we check for the ```
 ## **3) No Parenthesis**
 ![Image](./Images2/fix.PNG)
 Test file that produced failure: [noParen.md](https://github.com/ngngo0/markdown-parse/blob/b73b94f14c0c8a5054b977a2519f121850200718/noParen.md)
+
+Command: ```java MarkdownParse noParen.md```
 
 Output: ```Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -1```
 
