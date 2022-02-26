@@ -9,7 +9,7 @@ Theirs: [the clone that  i edited](https://github.com/ngngo0/MarkDownParse/tree/
 [the original one i forked from](https://github.com/ExtraExaByte/MarkDownParse)
 ## **Snippet 1**
 ----
-Test: (snipOne.md is just a copy of Snippet 1) 
+**Test: (snipOne.md is just a copy of Snippet 1) **
 ![Image](./Images4/L4p1.PNG)
 
 **My implementation(failed):**
@@ -20,7 +20,7 @@ Test: (snipOne.md is just a copy of Snippet 1)
 
 ## **Snippet 2**
 ---
-Test: (snipTwo.md is just a copy of Snippet 2) 
+**Test: (snipTwo.md is just a copy of Snippet 2) **
 ![Image](./Images4/L4p4.PNG)
 
 **My implementation(failed):**
@@ -31,7 +31,7 @@ Test: (snipTwo.md is just a copy of Snippet 2)
 
 ## **Snippet 3**
 ---
-Test: (snipThree.md is just a copy of Snippet 3) 
+**Test: (snipThree.md is just a copy of Snippet 3) **
 ![Image](./Images4/L4p7.PNG)
 
 **My implementation(failed):**
